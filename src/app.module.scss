@@ -1,0 +1,76 @@
+@import "./assets/style/main.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* header */
+
+.header {
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* header */
+
+ul.menu__wrapper {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+
+  .menu__wrapper_li {
+    position: relative;
+    padding: 16px 20px 17px 20px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown_li:hover {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* dropdown menu */
+
+.menu__experience {
+  margin-top: 17px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.7);
+
+  li {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+  }
+
+  li:hover {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
